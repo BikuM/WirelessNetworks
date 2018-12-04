@@ -1,0 +1,123 @@
+%
+% latex-sample.tex
+%
+% This LaTeX source file provides a template for a typical research paper.
+%
+
+%
+% Use the standard article template.
+%
+\documentclass[twocolumn,10pt]{article}
+
+\usepackage{titling}
+
+
+\usepackage{float}
+                   % collegamenti ipertestuali
+
+\usepackage[babel]{csquotes}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{booktabs,tabularx}
+\usepackage{makeidx}
+\usepackage{fixltx2e}
+%\usepackage{hyperref}
+
+
+% The geometry package allows for easy page formatting.
+\usepackage{geometry}
+\geometry{letterpaper}
+
+% Load up special logo commands.
+\usepackage{doc}
+
+% Package for formatting URLs.
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+
+% Packages and definitions for graphics files.
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{stfloats}
+\usepackage{adjustbox} 
+\usepackage[colorlinks, linkcolor = blue, urlcolor = blue]{hyperref}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\usepackage[final]{pdfpages}
+\usepackage{shellesc}
+
+\usepackage{tabularx,pbox}
+\usepackage{here}
+\usepackage[titletoc,title]{appendix}
+
+
+%
+% Set the title, author, and date.
+%
+\title{\LARGE \textbf{An Overview on Wireless Body Area Networks}}
+\author{Rudy Berton \and Vassilikì Menarin }
+\date{\small {Email: rudy.bertom@studenti.unipd.it vassiliki.menarin@studenti.unipd.it }}
+
+\def\code#1{\texttt{#1}}
+\def \ped#1{\textsubscript{#1}}
+\def \sup#1{\textsuperscript{#1}}
+
+%
+% The document proper.
+%
+\begin{document}
+	
+	% Add the title section.
+
+	\maketitle
+	
+	\textbf{\textit{Abstarct} - 
+		 CONTINUA}
+
+	
+	\section{Introduction}	
+	Spunti: Utilizzo delle ban, perche- puo- avere senso studiarle, dove trovano la loro maggiore applicazine
+	
+	\section{}
+	Spunti:
+			
+	\subsection{Implementations}
+	Spunti: discussione sui possibili protocolli che possono essere usati e loro breve storia? Una sottosezione per ogni protocollo?
+	
+	Esempio figura:		
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.8\linewidth]{img/BG01.png}
+		\caption{Extensive form of the Bayesan Game considered}				
+		\label{fig:BG01}
+	\end{figure}
+
+\section{Comparison}
+Spunti> possibile confronto tra i protocolli presentati sopra?
+
+\section{Implementations}
+Spunti: Usi e applicazioni delle BAN?
+
+\section{Major research issues/ Challenges}
+Se c'e' da dire
+
+\section{Conclusion}
+Conclusione
+
+\clearpage
+
+% Generate the bibliography.
+	\begin{thebibliography}{9}	
+	\bibitem{1} 
+	Esempio bib
+	
+	\bibitem{2} 
+	Inserisci
+	
+	\end{thebibliography}
+	%\bibliography{latex-sample}
+	%\bibliographystyle{unsrt}
+	
+\end{document}
