@@ -38,14 +38,30 @@ Knowing the patient's history this type of applications can reduce medical accid
 \\The non-medical fields in which WBAN is recently taking place are sports, entertainment and military environment. Both in the first and last case this technology can improve performances of athletes and soldiers keeping a log of physiological data, and detect life threatening situations in military context. Entertainment environment use WBAN for different purposes compared to the other, for example to register body motions of actors during the making of a film.
 \\There are three classes of devices that constitute WBAN and allow its applications: wireless sensor node, actuators and wireless personal device. The first type concerns components, wearable or implantable, that provide wireless monitoring of people or environment, communicating physiological parameters to other devices. Indeed, the work of actuators depends on the data received: if sensors detect an abnormal parameter, actuator administer medicine to the patient. Finally, Personal Device (PD) is the device responsible for the communication between sensors, actuators and cellular phone through wireless connection. \cite{salayma2017wireless}
 
+
 \section{WBAN Standards}
+Two are the most known standards created as solution for Wireless Body Area Networks. The former standard is IEEE 802.15.4, developed in 2003 and mainly thought for low-rate and low-power Wireless Personal Area Networks (WPAN), later adapted to operate around the human body with a WBAN. The latter, instead, is IEEE 802.15.6 and was born in 2007 with the purpose of to be a good solution for the WBAN from the beginning. Its final version was published in 2012 and nowadays is the most widely standard used in WBAN technologies.
+\\These solutions have a different structure in Physical layer (PHY) and Medium Access Control layer (MAC) as we will see below.
+
 
 \subsection{IEEE 802.15.4}
+The topology thought for the IEEE 802.15.4 standard considered devices that consume minimal power in a WPAN and can cover an area of 10 meters. Each device represents a node in the network that could have two possible roles during the communications: be a coordinator node, with specific tasks to fulfill, or a simple node that receive information. This structure allowed MAC layer to operate in two different mode, beacon-enabled or beacon-less, using three different access schemes in the exchange of packets: unslotted carrier sensing multiple access with collision avoidance (CSMA-CA), a slotted version of the same one and the contention free period scheme (CFP).
+\\In the beacon-enabled mode there is a coordinator node that periodically transmits a beacon, so defining a superframe that starts with a beacon and ends with the next one. Each beacon contains information about the identification and the synchronization of the PAN in addition to the structure of superframe. The remaining part of superframe is called Contention Access Period (CAP) and is used for data transmission. Moreover, coordinator could reserve some slots after CAP in the superframe, called Guaranteed Time Slots (GTS), assigned to devices that have to run their applications without the contention with other devices.These slots form the CFP. [fig. ?].
+In beacon-less mode instead no one superframe is defined because there is not any transmission of beacon for the synchronization; only random access is available and for this reason no one GTS slot could be reserved. It implies the use of an unslotted version of CSMA-CA before the transmission of data. Device that want to send data has to pick a random backoff delay and when it expires device has to perform a clear channel assessment (CCA): listen if the channel is idle and transmit or pick a new backoff delay to try again the transaction later. 
+\\A slotted CSMA-CA version is instead used in beacon-enabled networks for a correct synchronization. In this case when the device performs a CCA, after the random backoff delay, if channel is idle, device decides to repeat the CCA for a number of backoff units in according to the value of the contention window (CW), before to transmit. During all the backoff units of CW if channel is idle device can transmit the data, instead it has to restart taking a new backoff delay. 
+\\Both slottend and unslotted CSMA-CA algorithms are used only for data transaction, not for beacon frames, acknowledgment or CFP transmissions and define a maximum number of backoffs that could fail before to declare the channel inaccessible.
+\\In beacon-enabled mode exists two type of data transactions: from coordinator to devices or vice versa. In the former, when the coordinator inform the device target of the data through beacon, the receiver reply that is ready sending a request to coordinator (using slotted CSMA-CA); coordinator can now select a free slot to start the transmission. In the latter case, when the coordinator receive data from device, in a similar way explained above, it could confirm the successful reception sending back an acknowledgment. 
+
 
 \subsection{IEEE 802.15.6}
 
 \subsection{Comparison between WBAN standards}
 
+\section{WBAN issues}
+Da fare
+
+\section{Conclusions}
+Da fare
 %\section{Ease of Use}
 %
 %\subsection{Maintaining the Integrity of the Specifications}
