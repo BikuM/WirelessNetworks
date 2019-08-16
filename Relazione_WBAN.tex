@@ -7,6 +7,9 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+
+\usepackage{tabularx}
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -29,7 +32,46 @@ Da mettere??? %component, formatting, style, styling, insert
 \end{IEEEkeywords}
 
 \section{Introduction}
-Da fare
+The interest in developing wireless networks built around humans, mainly for an easy and quick way to help monitor health and physiology, has significantly grown in recent years: there is now a higher demand of these kind of communications, that have become possible thanks to technological advances.
+\\In particular, the minimization of components and the creation of very-low-power wireless technologies have opened new possibilities for the development of small, personal wireless networks. Furthermore, non-invasive technologies as well as technologies compatible with human physiology are very sought after.
+\\Wireless Body Area Networks (WBAN) have been developed as a new wireless technology with promising applications in many fields, mainly healthcare, but also athletic training, secure authentication and safety.
+\\A WBAN is a network that connects tiny nodes, usually sensors and/or actuators to the human body. The wireless sensors are usually placed in, on or around a person’s body. From there they connect to router nodes that receive and elaborate the date. Since these router nodes are intended to be placed around the wearer, the sensor nodes don’t need to cover wide ranges, averaging around 2 m. From there, the data may ultimately be sent to centralized centers and databases. Figure \ref{fig_WBAN_arch} shows the general architecture of a WBAN.
+
+\begin{figure*}[htbp]
+\centering
+\includegraphics[width=0.8\linewidth]{img/WBAN_arch.png}
+\caption{A general architecture of the WBAN}
+\label{fig_WBAN_arch}
+\end{figure*}
+
+Since they are based on sensors that gather and elaborate data, WBANs may be considered similar to sensor networks but, due to their unique characteristics, they pose some new technical challenges. Some of the main differences between WBANs and conventional sensor networks are listed in Table \ref{tab1}:
+
+\begin{table}[htbp]
+	\caption{Main differences between WSNs and WBANs}
+	%\begin{center}
+	\begin{tabularx}{0.5\textwidth}{r|X|X|}
+	% \begin{tabular}{r|c|c|}
+	 & \textbf{WSN} & \textbf{WBAN} \\
+	\hline
+	Architecture & Every node is both a sensor and a router & Two categories of nodes: sensor/actuators placed in or on the human body and router nodes around them \\
+	\hline
+	Density & May present high redundancy for a better fault tolerance & Usually low \\
+	\hline
+	Data rate & Usually used for monitoring irregular events & Human physiological activities may vary in a periodic manner, this may lead to stable data rates \\
+	\hline
+	Latency	& It may be necessary to maximize battery life in a WSN at the expense of higher latency & Reduce latency even if it impacts battery savings (replacements of batteries may be easy) \\
+	\hline
+	Mobility & Stationary nodes & Wearers move around \\
+	\hline
+	\end{tabularx}
+	\label{tab1}
+	%\end{center}
+	\end{table}
+
+In this paper we will discuss some of WBAN most promising applications. Then we will discuss the different standards that have already been set for this kind of networks and finally we’ll give an overview of the challenges these network pose. (AGGIUNGI RIFEWRIMENTI ALLE SEZIONI).
+
+
+
 
 \section{WBAN Applications and Devices}
 The employment of Wireless Body Area Network was mainly focused on medical field, nevertheless in the last years, from these discoveries, have been introduced some innovations in non-medical fields too.
@@ -57,11 +99,35 @@ In beacon-less mode instead no one superframe is defined because there is not an
 
 \subsection{Comparison between WBAN standards}
 
-\section{WBAN issues}
-Da fare
+\section{Challenges and open research issues}
+To design efficient and usable WBANs, we have to overcome some important challenges. Since WBANs may be used in different applications, the issues we are facing may also vary a lot. Here we analyze the general challenges and research issues one has to consider when designing a WBAN, even though they may not all be pertinent at the same time.
+
+\subsection {Physical characteristics of nodes}
+Since the nodes are going to be implemented on, if not inside, human bodies, it is crucial to consider how they are built. One needs to carefully evaluate their size, material and compatibility with the human body. Furthermore, many people may find the implant of a sensor inside their body invasive, and refuse it. Thus, sensor placed on the skin may be preferable. Finally, one needs to answer concerns regarding the electronic and magnetic energy absorbed by human tissues.
+
+\subsection {WBAN specific issues}
+Overall, WBANs would benefit for more research and improved models to help predict their unique behavior in realistic environments. For example, how is the signal propagation being affected by the physical characteristics of the human body? Are there going to be issues when considering a moving wearer? Also, power management, sensor calibration, management of resources may be handled in new, different ways from the ones already in use in other kind of networks.
+
+\subsection {Power Supply}
+While batteries may be easier to replace in devices situated outside the human bodies, remote battery recharging becomes not-negotiable for devises implemented directly into the human body.
+
+\subsection {Device Interoperability}
+Different devices, from different manufacturers and monitoring different phenomena may be implemented at the same time on a single wearer. All these devices need to be able to operate without interfering with each other. In same cases, it may need to exchange data between them. The setting of common standards may greatly help with device compatibility. 
+
+\subsection {Privacy and Security issues}
+	Security may be the greatest challenge for WBAN and it’s required by the data exchanged. Since WBANs deal with very personal information, there is the strong need to ensure data privacy and a reliable authentication in the whole data transfer process. Not only this, data needs to be confidential, uncorrupted and dependable. Finding the right balance is a very delicate matter and security may conflict with many other aspects. Depending on the system we are building we may need to sacrifice efficiency or usability for an increased security. Paper NUMERO UNO gives an overview on all the different security issues involved when dealing with WLANs, here we list some of the most common practical issues concerning security:
+		\begin{itemize}
+			\item Security and Efficiency: the devices involved in WBANs are very small and may lack the storage capabilities and power supplies needed for strong cryptographic computations. Efficiency may be sacrificed dedicating more power to the security operations
+			\item  Security and Safety: the devices may carry vital information on the wearer’s health which may become inaccessible in time of need if the wearer is unconscious or unresponsive. There needs to be a way to ensure strong security as well as privacy while allowing flexible access to qualified , legitimate, medical staff. There has been some research in this regards VEDI NOTA PAPER 01 CODE BLUE.
+			\item Security and Usability: the main aim of medical WBANs is to simplify health monitoring. That means that even non-qualified people should be able to manage their devices, at least at a basic level. When configuration and setup of the devices becomes too technical, people may feel discouraged and prefer other solutions. On the other hand, if we try to increase usability by omitting some manual configuration steps, this may lead to looser security policies.
+		\end{itemize}
+
 
 \section{Conclusions}
-Da fare
+WBAN is an emerging and promising technology that may bring huge changes in people’s lives. In order to improve this technology a coordinated effort between different fields may be required:  proposals may come not only through computer science, but also from biology and the design of new materials. 
+\\We gave an overview of WBANs many applications and the steps that have already been taken to try and standardize this technology. While WBANs may be used in many different fields, arguably, their most interesting use is in healthcare, through what is often termed e-healthcare. E-Healthcare is also the field that poses the biggest challenges, mainly in data security and privacy.
+\\In conclusion WBAN, while still requiring thorough research and studies before it can be widely applied, may lead to very important developments in our everyday lives. 
+
 %\section{Ease of Use}
 %
 %\subsection{Maintaining the Integrity of the Specifications}
