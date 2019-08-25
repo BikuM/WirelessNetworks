@@ -113,7 +113,33 @@ Several years later started the definition of this new standardization of WBAN t
 \\The access mechanism used in each period of the superframe presents three categories. The \textit{Random Access Mechanism}, used in EAP, RAP and CAP periods, define the use of slotted Aloha or CSMA/CA protocol by the coordinator for the resource allocation. \textit{Improvised and Unscheduled Access Mechanism} is used when hub needs an improvised access to send poll or post commands without a notice in beacon or nonbeacon modes, outside the scheduled allocation interval.\textit{Scheduled and Scheduled-Polling Access Mechanism} instead is used to obtain scheduled uplink, downlink and bilink allocations, useful to send management and data frames to and from hub respectively.
 
 \subsection{Comparison between WBAN standards}
-DA FARE
+Table \ref{tab2} RIFERIMENTO PAPER summarizes the main differences in the designs of standards IEEE 802.15.4 and IEEE 802.15.6.
+
+\begin{table}[htbp]
+	\caption{A comparison between IEEE 802.15.4 and IEEE 802.15.6}
+	%\begin{center}
+	\begin{tabularx}{0.5\textwidth}{X|X|X|}
+		% \begin{tabular}{r|c|c|}
+		\textbf{Criteria} & \textbf{IEEE 802.15.4} & \textbf{IEEE 802.15.6} \\
+		\hline
+		Network type & WPAN &  WBAN: NB, UWB and HBC\\
+		\hline
+		MAC modes &  Beacon/Non beacon mode with/without superframe & Superframe with/without beacon mode \\
+		\hline
+		Access mechanism &  Random access (with contention), scheduled access (without contention) & Contention based random access or connection oriented contention-free \\
+		\hline
+		Contention access resource allocation procedure	& Slotted and unslotted CSMA/CA & CSMA/CA slotted Aloha \\
+		\hline
+		Specific Access for prioritised traffic & No & Yes \\
+		\hline
+	\end{tabularx}
+	\label{tab2}
+	%\end{center}
+\end{table}
+
+There have been some tests and evaluations comparing the two standards describe to better understand how to employ them in WBANs and which one is better fitted for real-life scenarios. Even though IEEE 802.15.6 was specifically designed for WBANS, tests done in a simulation environment (Castalia for both PAPER QOS E PERF) show how 802.15.4 outperforms 802.15.6 in terms of throughput and energy consumption. More specifically, 802.15.4 seems overall more suited for communications in low traffic rates conditions. On the other hand, 802.16.6 shows better performances when it comes to packet delivery latency and seems to work better in high traffic rate scenarios.
+
+One proposal PAPER QOS is to use IEEE 802.15.4 for non-time critical sensor requiring low data rates while favoring IEEE 802.15.6 for sensors with high data rates and in time critical applications. 
 
 \section{Challenges and open research issues}
 To design efficient and usable WBANs, we have to overcome some important challenges. Since WBANs may be used in different applications, the issues we are facing may also vary a lot. Here we analyze the general challenges and research issues one has to consider when designing a WBAN, even though they may not all be pertinent at the same time.
