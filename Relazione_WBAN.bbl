@@ -21,10 +21,50 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{cao2009enabling}
+H.~Cao, V.~Leung, C.~Chow, and H.~Chan, ``Enabling technologies for wireless
+  body area networks: A survey and outlook,'' \emph{IEEE Communications
+  Magazine}, vol.~47, no.~12, pp. 84--93, 2009.
+
 \bibitem{salayma2017wireless}
 M.~Salayma, A.~Al-Dubai, I.~Romdhani, and Y.~Nasser, ``Wireless body area
   network (wban): a survey on reliability, fault tolerance, and technologies
   coexistence,'' \emph{ACM Computing Surveys (CSUR)}, vol.~50, no.~1, p.~3,
   2017.
+
+\bibitem{li2009performance}
+C.~Li, H.-B. Li, and R.~Kohno, ``Performance evaluation of ieee 802.15. 4 for
+  wireless body area network (wban),'' in \emph{2009 IEEE International
+  conference on communications workshops}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2009, pp. 1--5.
+
+\bibitem{kwak2010overview}
+K.~S. Kwak, S.~Ullah, and N.~Ullah, ``An overview of ieee 802.15. 6 standard,''
+  in \emph{2010 3rd International Symposium on Applied Sciences in Biomedical
+  and Communication Technologies (ISABEL 2010)}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2010, pp. 1--6.
+
+\bibitem{ullah2013review}
+S.~Ullah, M.~Mohaisen, and M.~A. Alnuem, ``A review of ieee 802.15. 6 mac, phy,
+  and security specifications,'' \emph{International Journal of Distributed
+  Sensor Networks}, vol.~9, no.~4, p. 950704, 2013.
+
+\bibitem{nabila2019qos}
+A.~Nabila \emph{et~al.}, ``A qos based comparative analysis of the ieee
+  standards 802.15. 4 \& 802.15. 6 in wban-based healthcare monitoring
+  systems,'' in \emph{2019 International Conference on Wireless Technologies,
+  Embedded and Intelligent Systems (WITS)}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2019, pp. 1--5.
+
+\bibitem{toumanari2014performance}
+A.~Toumanari, R.~Latif \emph{et~al.}, ``Performance analysis of ieee 802.15. 6
+  and ieee 802.15. 4 for wireless body sensor networks,'' in \emph{2014
+  International Conference on Multimedia Computing and Systems (ICMCS)}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2014, pp. 910--915.
+
+\bibitem{li2010data}
+M.~Li, W.~Lou, and K.~Ren, ``Data security and privacy in wireless body area
+  networks,'' \emph{IEEE Wireless communications}, vol.~17, no.~1, pp. 51--58,
+  2010.
 
 \end{thebibliography}
