@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-Wireless Body Area Networks (WBAN) is a recent wireless technology that presents its main application in medical field with the use of sensors that work in close vicinity to, on or inside a human body. Through the years, two main standards have been established by a task group to define this technology: IEEE 802.15.4 and IEEE 802.15.6. The purpose of this paper is to give a general overview of the technology employed in WBANs, describing the standards with their differences between Physical and Mac layers, to talk about the different fields in which WBANs can be applied and the issues and challenges that may arise when working with these networks.
+Wireless Body Area Networks (WBAN) is a recent wireless technology that presents its main application in the medical field with the use of sensors that work in close vicinity to, on or inside the human body. Through the years, two main standards have been established by a task group to define this technology: IEEE 802.15.4 and IEEE 802.15.6. The purpose of this paper is to give a general overview of the technology employed in WBANs, describing the standards with their differences between Physical and Mac layers, to talk about the different fields in which WBANs can be applied and the issues and challenges that may arise when working with these networks.
 \end{abstract}
 \hfill
 %
@@ -39,7 +39,7 @@ In particular, the minimization of components and the creation of very-low-power
 
 Wireless Body Area Networks (WBANs) have been developed as a new wireless technology with promising applications in many fields, mainly healthcare, but also athletic training, secure authentication and safety.
 
-A WBAN is a network that connects tiny nodes, usually sensors and/or actuators to the human body. The wireless sensors are usually placed in, on or around a person’s body. From there, they connect to router nodes that receive and elaborate the data transmitted. Since these router nodes are intended to be placed around the wearer, the sensor nodes do not need to cover wide ranges, averaging around 2m. From there, the data may ultimately be sent to centralized centers and databases. Figure \ref{fig_WBAN_arch} shows the general architecture of a WBAN.
+A WBAN is a network that connects tiny nodes, usually sensors and/or actuators to the human body. The wireless sensors are usually placed in, on or around a person's body. From there, they connect to router nodes (e.g. cell phones) that receive and elaborate the data transmitted. Since these router nodes are intended to be placed around the wearer, the sensor nodes do not need to cover wide ranges, averaging around 2m. The data may ultimately be sent to centralized centers and databases. Figure \ref{fig_WBAN_arch} shows the general architecture of a WBAN.
 
 \begin{figure}[htbp]
 \centering
@@ -72,24 +72,24 @@ Since they are based on sensors that gather and elaborate data, WBANs may be con
 	%\end{center}
 	\end{table}
 
-We will now discuss some of WBANs' most promising applications in Section II. Section III explains the standards that have already been set for this kind of networks and their main differences. Finally in Section IV, we will give an overview of the challenges these networks pose and a conclusion in Section V.
+We will discuss some of WBANs' most promising applications in Section II. Section III explains the standards that have already been set for this kind of networks and their main differences. Finally in Section IV, we will give an overview of the challenges these networks pose and a conclusion in Section V.
 
 
 \section{WBAN Applications and Devices}
 The employment of Wireless Body Area Networks was initially mainly focused on the medical field, nevertheless in the last years, starting from these initial discoveries, this technology has been used to introduce some innovations in non-medical fields too.
 
-Still, the most common application of this technology remains healthcare, where WBAN is used to collect biomedical signals monitoring patients with health problems remotely and continually. 
-Knowing the patient's history and coupling this knowledge with this type of applications, it is possible to reduce medical accidents and increase public safety alerting medical personnel in time. Some parameters monitored are heartbeat, body temperature and blood pressure thanks to wearable applications (e.g. ECG), while implanted applications are used to monitor more particular diseases (e.g. diabetes, cancer) implanting them directly under the skin or in the bloodstream.
+Still, the most common application of this technology remains healthcare, where WBANs are used to collect biomedical signals monitoring patients with health problems remotely and continually. 
+Knowing the patient's history and coupling this knowledge with this type of applications, it is possible to reduce medical accidents and increase public safety, alerting medical personnel in time. Some parameters monitored are heartbeat, body temperature and blood pressure thanks to wearable applications (e.g. ECG), while implanted applications are used to monitor more particular diseases (e.g. diabetes, cancer) implanting them directly under the skin or in the bloodstream.
 
-Some non-medical fields in which WBAN is recently being employed are sports, entertainment and military environment. Both in the first and last cases this technology can improve performances of athletes and soldiers keeping a log of physiological data, as well as detect life threatening situations in military context. In the entertainment environment WBANs can be used for different purposes, for example to register body motions of actors during the making of a film.
+Some non-medical fields in which WBAN is recently being employed are sports, entertainment and military environment. Both in the first and last case, this technology can improve performances of athletes and soldiers by keeping a log of physiological data, as well as detect life threatening situations in military context. In the entertainment environment WBANs can be used for different purposes, for example to register body motions of actors during the making of a film.
 
-There are three classes of devices that constitute WBANs and allow its applications: \textit{wireless sensor nodes, actuators and wireless personal devices}. The first type concerns components, wearable or implantable, that provide wireless monitoring of people or environment, communicating physiological parameters to other devices. Indeed, the work of actuators depends on the data received: if sensors detect an abnormal parameter, actuator administer medicine to the patient. Finally, a Personal Device (PD) is the device responsible for the communication between sensors, actuators and cellular phone through wireless connection \cite{salayma2017wireless}.
+There are three classes of devices that constitute WBANs and allow its applications: \textit{wireless sensor nodes, actuators and wireless personal devices}. The first type concerns components, wearable or implantable, that provide wireless monitoring of people or environment, communicating physiological parameters to other devices. Indeed, the work of actuators depends on the data received: if sensors detect an abnormal parameter, actuators administer medicine to the patient. Finally, a Personal Device (PD) is the device responsible for the communication between sensors, actuators and cellular phone through wireless connection \cite{salayma2017wireless}.
 
 
 \section{WBAN Standards}
-Two are the most known standards created as solution for Wireless Body Area Networks. The first one is IEEE 802.15.4, developed in 2003 and mainly thought for low-rate and low-power Wireless Personal Area Networks (WPAN), later adapted to operate around the human body with a WBAN. The second one is IEEE 802.15.6 and it was born in 2007; it was developed to be a good solution for the WBAN right from the beginning. Its final version was published in 2012 and nowadays is the most widely used standard in WBAN technologies.
+Two are the most known standards created as a solution for Wireless Body Area Networks. The first one is IEEE 802.15.4, developed in 2003 and mainly thought for low-rate and low-power Wireless Personal Area Networks (WPAN), later adapted to operate around the human body with a WBAN. The second one is IEEE 802.15.6 and it was born in 2007; it was developed to be a good solution for the WBAN right from the beginning. Its final version was published in 2012 and nowadays is the most widely used standard in WBAN technologies.
 
-These solutions have a different structure in Physical layer (PHY) and Medium Access Control layer (MAC) as we will see below.
+These solutions have a different structure in Physical layer (PHY) and Medium Access Control layer (MAC), as we will see below.
 
 
 \subsection{IEEE 802.15.4}
@@ -97,7 +97,7 @@ The topology thought for the IEEE 802.15.4 standard considers devices that consu
 
 The PHY layer presents 27 channels divided in three different frequency bands and interacts with the MAC layer after the selection of the right channel. Moreover, the PHY level controls the activation/deactivation of radio transceiver, the quality of the links, the transmission and reception of packets over the medium and the estimation of the inbound signal power.
 
-The standard's structure allows MAC layer to operate in two different modes, beacon-enabled or beacon-less, using three different access schemes in the exchange of packets: unslotted carrier sensing multiple access with collision avoidance (CSMA/CA), a slotted version of the same one and the contention free period scheme (CFP).
+The standard's structure allows the MAC layer to operate in two different modes, beacon-enabled or beacon-less, using three different access schemes in the exchange of packets: unslotted carrier sensing multiple access with collision avoidance (CSMA/CA), a slotted version of the same one and the contention free period scheme (CFP).
 \newline
 
 \textit{Beacon-enabled mode:} there is a coordinator node that periodically transmits a beacon, defining a superframe that starts with a beacon and ends with the next one. Each beacon contains information about the identification and the synchronization of the PAN in addition to the structure of the superframe. The remaining part is called Contention Access Period (CAP) and is used for data transmission made by nodes through the channel using the slotted CSMA/CA for a correct synchronization. Moreover, the coordinator could reserve up to seven slots after CAP in the superframe, called Guaranteed Time Slots (GTSs). These slots can be assigned to devices that have to run their applications without the contention with other devices. The GTSs form the CFP that works in Time Division Multiple Access (TDMA) [fig. \ref{fig_beaconenabled}].
@@ -115,22 +115,22 @@ The standard's structure allows MAC layer to operate in two different modes, bea
 \textit{Beacon-less mode:} no superframe is defined because there is not any transmission of beacons for the synchronization; only random access is available and for this reason the transmission can not be guaranteed and no GTS slots can be reserved. It implies the use of an unslotted version of CSMA/CA before the transmission of data. Devices that want to send data have to pick a random backoff delay and, when it expires, they have to perform a clear channel assessment (CCA): listen if the channel is idle and transmit or pick a new backoff delay to try again in the next transaction. 
 \newline
 
-Both the slottend and unslotted CSMA/CA algorithms are only used for data transactions and not for beacon frames, acknowledgment or CFP transmissions; moreover they define a maximum number of backoffs that can fail before the channel is declared inaccessible. Indeed, in beacon-enabled mode, when the device performs a CCA, after the random backoff delay, if the channel is idle the device decides to repeat the CCA for a number of backoff units in accordance to the value of the contention window (CW) before it transmits. During all the backoff units of CW, if channel is idle, the device can transmit the data, otherwise it has to restart with a new backoff delay. 
+Both the slottend and unslotted CSMA/CA algorithms are only used for data transactions and not for beacon frames, acknowledgment or CFP transmissions; moreover they define a maximum number of backoffs that can fail before the channel is declared inaccessible. Indeed, in beacon-enabled mode, when the device performs a CCA, after the random backoff delay, if the channel is idle the device decides to repeat the CCA for a number of backoff units in accordance to the value of the contention window (CW) before it transmits. During all the backoff units of CW, if the channel is idle, the device can transmit the data, otherwise it has to restart with a new backoff delay. 
 
 In this type of networks two types of data transactions are possible: from coordinator to devices or vice versa. In the former, when the coordinator informs the target device of the data through beacon, the receiver replies that it is ready by sending a request back to the coordinator (using slotted CSMA/CA). The coordinator can now select a free slot to start the transmission. In the latter case, when the coordinator receives data from the device, in a similar way as explained above, it could confirm the successful reception by sending back an acknowledgment \cite{li2009performance}.
 
 
 \subsection{IEEE 802.15.6}
-Several years after IEEE 802.15.4, started the definition of a new standardization of WBAN to optimize the low-power nodes that handle the applications.
+Several years after IEEE 802.15.4, the definition of a new standardization of WBAN was proposed to optimize the low-power nodes that handle the applications.
 
-The new IEEE 802.15.6 standard defines a MAC layer that supports not one but three operational PHYs layers, each one with an hub (or coordinator) and a total number of at most 64 nodes that are organized into one-or-two-hop star topology. A brief description of the physical layers follows:
+The new IEEE 802.15.6 standard defines a MAC layer that supports not one, but three operational PHYs layers, each one with an hub (or coordinator) and a total number of at most 64 nodes that are organized into one-or-two-hop star topology. A brief description of the physical layers follows:
 \newline
 
 \textit{Narrowband PHY}. It is responsible for the activation/deactivation of the radio transceiver, clear channel assessment and data reception/transmission; it defines the Physical Protocol Data Unit (PPDU) frame that includes three components: 
 \begin{itemize}
 	\item[-] Physical Layer Convergence Procedure (PLCP) preamble is composed of two sequences: the first one is used for coarse time synchronization, carrier-offset recovery and packet detection, the second instead is used for fine time synchronization.
 	\item[-] PLCP header contains a PHY header, with several fields used to convey information to the receiver for a successful decoding and some parity check bits used for error detection and error correction of PHY header.
-	\item[-] Physical-layer Service Data Unit (PSDU), transmitted for last, contains a MAC header, a MAC frame body and a Frame Check Sequence (FCS).
+	\item[-] Physical-layer Service Data Unit (PSDU), transmitted last, contains a MAC header, a MAC frame body and a Frame Check Sequence (FCS).
 \end{itemize}
 \hfill
 
@@ -140,7 +140,7 @@ The new IEEE 802.15.6 standard defines a MAC layer that supports not one but thr
 \textit{Human Body Communications PHY}. Similar to NB PHY, the packet contains a PLCP preamble, SFD, PLCP header with control and error detection/correction bits and at last PSDU. In this PHY, the preamble sequence is transmitted four times to ensure packet synchronization, while SFD is transmitted once.
 \newline
 
-For the MAC layer, the standard defines a channel division into beacon periods (also called superframes) of equal length made by hubs. They transmit a beacon to define the superframe boundaries and allocate the slots that are used for data transmission. Generally a hub transmits a beacon in each active superframe, but when beacons are not used the boundaries of superframe are defined by a polling action.
+For the MAC layer, the standard defines a channel division into beacon periods (also called superframes) of equal length made by hubs. They transmit a beacon to define the superframe boundaries and allocate the slots that are used for data transmission. Generally a hub transmits a beacon in each active superframe, but when beacons are not used the boundaries of the superframe are defined by a polling action.
 
 The frame in the MAC layer is formed by a header, a frame body with maximum length of 255 bytes and the Frame Check Sequence at last. The MAC Header includes a control field that controls information about the frame, the sender and recipient identification and the WBAN ID field with information about the network. In addition to the payload, in the MAC frame body there are bits with the aim of assessing the freshness, authenticity and integrity of the message.
 
@@ -182,7 +182,7 @@ Table \ref{tab2} \cite{salayma2017wireless} summarizes the main differences in t
 
 There have been some tests and evaluations on the two standards described to better understand how to employ them in WBANs and which one is better fitted for real-life scenarios. 
 Even though IEEE 802.15.6 was specifically designed for WBANS, tests done in a simulation environments (Castalia for both \cite{nabila2019qos} and \cite{toumanari2014performance}) show how 802.15.4 outperforms 802.15.6 in terms of  energy consumption, throughput and packets loss in low rate conditions (fig. \ref{grafico}). Indeed, the number of received packets in IEEE 802.15.4 is greater since it uses TDMA technology that mitigates the number of packet collision; in EAP and RAP periods instead, for standard 802.15.6, the use of CSMA/CA access procedure for resource allocation leads to a higher collision probability for nodes with same priority.
-Nevertheless, 802.15.6 always shows a low latency in time required to deliver data packets to the coordinator; it leads to obtain better performances in terms of throughtput and packets loss rates in high traffic scenarios, outperforming IEEE 802.15.4. 
+Nevertheless, 802.15.6 always shows a low latency in time required to deliver data packets to the coordinator; it leads to better performances in terms of throughtput and packets loss rates in high traffic scenarios, outperforming IEEE 802.15.4. 
 \newline One proposal \cite{nabila2019qos} is to use IEEE 802.15.4 for non-time critical sensor requiring low data rates while favoring IEEE 802.15.6 for sensors with high data rates and in time critical applications. 
 
 \begin{figure}[htbp]
@@ -196,10 +196,10 @@ Nevertheless, 802.15.6 always shows a low latency in time required to deliver da
 To design efficient and usable WBANs, we have to overcome some important challenges. Since WBANs may be used in different applications, the issues we are facing may also vary a lot. Here we analyze the general challenges and research issues one has to consider when designing a WBAN \cite{cao2009enabling}, even though they may not all be pertinent at the same time.
 
 \subsection {Physical characteristics of nodes}
-Since the nodes are going to be implemented on, if not inside, human bodies, it is crucial to consider how they are built. One needs to carefully evaluate their size, material and compatibility with the human body. Furthermore, many people may find the implant of a sensor inside their body invasive, and refuse it. Thus, sensor placed on the skin may be preferable. Finally, one needs to answer concerns regarding the electronic and magnetic energy absorbed by human tissues.
+Since the nodes are going to be implemented on, or even inside, human bodies, it is crucial to consider how they are built. One needs to carefully evaluate their size, material and compatibility with the human body. Furthermore, many people may find the implant of a sensor inside their body invasive, and refuse it. Thus, sensor placed on the skin may be preferable. Finally, one needs to answer concerns regarding the electronic and magnetic energy absorbed by human tissues.
 
 \subsection {WBAN specific issues}
-Overall, WBANs would benefit for more research and improved models to help predict their unique behavior in realistic environments. For example, how is the signal propagation being affected by the physical characteristics of the human body? Are there going to be issues when considering a moving wearer? Also, power management, sensor calibration, management of resources may be handled in new, different ways from the ones already in use in other kind of networks.
+Overall, WBANs would benefit from more research and improved models to help predict their unique behavior in realistic environments. For example, how is the signal propagation being affected by the physical characteristics of the human body? Are there going to be issues when considering a moving wearer? Also, power management, sensor calibration and management of resources may be handled in new, different ways from the ones already in use in other kind of networks.
 
 \subsection {Power Supply}
 While batteries may be easy to replace in devices situated outside the human bodies, remote battery recharging becomes not-negotiable for devises implemented directly inside the human body.
@@ -208,22 +208,22 @@ While batteries may be easy to replace in devices situated outside the human bod
 Different devices, from different manufacturers and monitoring different phenomena may be implemented at the same time on a single wearer. All these devices need to be able to operate without interfering with each other. In same cases, they may need to exchange data between them. The setting of some common standards may greatly help with device compatibility. 
 
 \subsection {Privacy and Security issues}
-Security may be the greatest challenge for WBAN and it is strongly required due to the nature of the data exchanged, especially in medical applications. Since WBANs deal with very personal information, there is a strong need to ensure data privacy and a reliable authentication in the whole data transfer process. 
+Security may be the greatest challenge for WBANs and it is strongly required due to the very private nature of the data exchanged, especially in medical applications. Since WBANs deal with very personal information, there is a strong need to ensure data privacy and a reliable authentication in the whole data transfer process. 
 
 Not only this, data also needs to be confidential, uncorrupted and dependable. Finding the right balance is a very delicate matter and security may conflict with many other aspects. Depending on the system we are building, we may need to sacrifice efficiency or usability for an increased security. 
 
 Paper \cite{li2010data} gives an overview on all the different security issues involved when dealing with WLANs in healthcare. Here we list some of the most common practical issues concerning security:
 	\begin{itemize}
-		\item[-] Security and Efficiency: the devices involved in WBANs are very small and may lack the storage capabilities and power supplies needed for strong cryptographic computations required to ensure security. Efficiency may be sacrificed dedicating more power to the security operations
-		\item[-]  Security and Safety: the devices may carry vital information on the wearer’s health which may become inaccessible in time of need if the wearer is unconscious or unresponsive. There needs to be a way to ensure strong security as well as privacy while, at the same time, allowing flexible access to qualified, legitimate, medical staff. There has been some research in this regard (described in \cite{li2010data}) but it is still a challenging requirement
-		\item[-] Security and Usability: the main aim of medical WBANs is to simplify health monitoring. It means that even non-qualified people should be able to manage their own devices, at least at a basic level. When configuration and setup of the devices becomes too technical, people may feel discouraged and prefer other solutions. On the other hand, if we try to increase usability by omitting some manual configuration steps, this may lead to looser security policies.
+		\item[-] Security and Efficiency: the devices involved in WBANs are very small and may lack the storage capabilities and power supplies needed for the strong cryptographic computations required to ensure security. Efficiency may be sacrificed dedicating more power to the security operations
+		\item[-]  Security and Safety: the devices may carry vital information on the wearer's health which may become inaccessible in time of need if the wearer is unconscious or unresponsive. There needs to be a way to ensure strong security as well as privacy while, at the same time, allowing flexible access to qualified, legitimate, medical staff. There has been some research in this regard (described in \cite{li2010data}) but it is still a challenging requirement
+		\item[-] Security and Usability: the main aim of medical WBANs is to simplify health monitoring. This means that even non-qualified people should be able to manage their own devices, at least at a basic level. When configuration and setup of the devices becomes too technical, people may feel discouraged and prefer other solutions. On the other hand, if we try to increase usability by omitting some manual configuration steps, this may lead to looser security policies.
 	\end{itemize}
 
 
 \section{Conclusions}
-WBAN is an emerging and promising technology that may bring huge changes in people’s lives. In order to improve this technology a coordinated effort between different fields may be required: proposals may come not only from computer science, but also from biology and the design of new materials. 
+WBAN is an emerging and promising technology that may bring huge changes in people's lives. In order to improve this technology a coordinated effort between different fields may be required: proposals may come not only from computer science, but also from biology and the design of new materials. 
 
-We gave an overview of WBANs' many applications and the steps that have already been taken to try and standardize this technology. While WBANs may be used in many different fields, arguably, their most interesting use is healthcare, through what is often termed e-healthcare. E-Healthcare is also the field that poses the biggest challenges, mainly in data security and privacy.
+We gave an overview of WBANs' many applications and the steps that have already been taken to try and standardize this technology. While WBANs may be used in many different fields, their most interesting use is in healthcare, through what is often termed e-healthcare. E-Healthcare is also the field that poses the biggest challenges, mainly in data security and privacy.
 
 In conclusion, WBAN technology, while still requiring thorough research and studies before it can be widely applied, may lead to very important developments in our everyday lives. 
 
